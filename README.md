@@ -7,31 +7,16 @@
 
 ## Description
 
- <!-- This application is built using Express.js the MySQL2, Sequelize, & dotenv packages, to create, read, update, and delete information in the database. The user can access the database by utilizing an application like Insomnia to execute GET, POST, PUT, and DELETE routes.
-
- It is intended to be used by employers/business owners of an internet retail company, who want to manage their e-commerce website using the latest backend technologies to make their company competitive. -->
+This is a single-page text editor application that runs in the browser and meets the PWA criteria, which allows it to function offline as well. It uses an express server, the idb package and is deployed on Heroku.
 
 ## Table of Contents
 
 - [Description](#description)
-- [Getting Started](#getting_started)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
-
-## Getting Started
-
-### Prerequisites
-
-If the user doesn't already have the following installed, follow the documentation provided:
-
-- [Node.js](https://nodejs.org/en/download/)
-- [Express.js](https://expressjs.com/en/starter/installing.html)
-- [MySQL2](https://www.npmjs.com/package/mysql2)
-- [Sequelize](https://www.npmjs.com/package/sequelize)
-- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Installation
 
@@ -46,7 +31,7 @@ Users can follow the video walkthrough attached below or the steps listed.
 - Navigate into cloned repo
 
   ```sh
-  cd ecom-behind-the-screens
+  cd pwa-note-taker
   ```
 
 - Install dependencies
@@ -55,99 +40,41 @@ Users can follow the video walkthrough attached below or the steps listed.
   npm install
   ```
 
-- Create a file named '.env' to store sensitive information in; see the .env.EXAMPLE file for an example of what belongs here
-
-  ```sh
-  DB_NAME='ecommerce_db' // users datebase name
-  DB_USER='' // users mysql username
-  DB_PASSWORD='' // users mysql password
-  ```
-
-- Login to mysql
-
-  ```sh
-  mysql -u root -p // enter users mysql password
-  ```
-
-- Create the database
-
-  ```sh
-  SOURCE db/schema.sql
-  ```
-
-- Seed table to the database
-
-  ```sh
-  npm run seed
-  ```
-
-- Exit mysql
-
-  ```sh
-  quit
-  ```
-
 ## Usage
 
 Users can follow the video walkthrough attached below or the steps listed.
 
-- Start/restart the app
+- Build the application
 
   ```sh
-  node server.js
+  npm run build
   ```
 
-- User will see a message in the terminal saying, "App listening on port 3001!"
-- Open Insomnia, or a comparable application, to access the database.
-- GET routes to view all
+- Start the server and client concurrently
 
   ```sh
-  localhost:3001/api/categories
-  localhost:3001/api/products
-  localhost:3001/api/tags
+  npm run start:dev
   ```
-
-- GET routes to view by ID
-
-  ```sh
-  localhost:3001/api/categories/1
-  localhost:3001/api/products/1
-  localhost:3001/api/tags/1
-  ```
-
-- POST routes to create
-
-  ```sh
-  localhost:3001/api/categories
-  localhost:3001/api/products
-  localhost:3001/api/tags
-  ```
-
-- PUT routes to update by ID
-
-  ```sh
-  localhost:3001/api/categories/1
-  localhost:3001/api/products/1
-  localhost:3001/api/tags/1
-  ```
-
-- DELETE routes to delete by ID
-
-  ```sh
-  localhost:3001/api/categories/1
-  localhost:3001/api/products/1
-  localhost:3001/api/tags/1
-  ```
-
-Walk-through video:
 
 ## Credits
 
 - Big thanks to my tutor, TA's and instructor for their help with this project
-- https://dev.mysql.com/doc/refman/8.0/en/
-- https://www.npmjs.com/package/mysql2
-- https://www.npmjs.com/package/sequelize
-- https://www.npmjs.com/package/dotenv
+- https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide
+- https://developer.chrome.com/docs/workbox/reference/workbox-webpack-plugin/#type-GenerateSWConfig
+- https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#interact_with_service_workers_in_the_browser
+- https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_offline_behavior
+- https://developers.google.com/web/tools/workbox/guides/generate-service-worker/webpack
+- https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin#injectmanifest_plugin
+- https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW
+- https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+- https://expressjs.com/en/starter/basic-routing.html
+- https://expressjs.com/en/starter/installing.html
+- https://www.npmjs.com/package/concurrently
+- https://www.npmjs.com/package/idb
+- https://www.npmjs.com/package/webpack-pwa-manifest
+- https://webpack.js.org/guides/asset-management/#loading-images
+- https://webpack.js.org/guides/getting-started/
+- https://webpack.js.org/plugins/mini-css-extract-plugin/#getting-started
 
 ## License
 
