@@ -1,3 +1,5 @@
+<!-- DEPLOY TO HEROKU -->
+
 # pwa-note-taker
 
 [![Contributors][contributors-shield]][contributors-url]
