@@ -1,6 +1,4 @@
-<!-- DEPLOY TO HEROKU -->
-
-# pwa-note-taker
+# PWA Note Taker
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
@@ -22,8 +20,6 @@ This is a single-page text editor application that runs in the browser and meets
 
 ## Installation
 
-Users can follow the video walkthrough attached below or the steps listed.
-
 - Clone the repo
 
   ```sh
@@ -44,7 +40,7 @@ Users can follow the video walkthrough attached below or the steps listed.
 
 ## Usage
 
-Users can follow the video walkthrough attached below or the steps listed.
+- Link to the deployed application: https://rocky-springs-71134.herokuapp.com/
 
 - Build the application
 
